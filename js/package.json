@@ -32,6 +32,6 @@
   },
   "peerDependencies": {
     "@sentry/sveltekit": ">=7.0.0",
-    "@sveltejs/kit": ">=1.0.0 <3.0.0"
+    "@sveltejs/kit": ">=1.0.0"
   }
 }
