@@ -1,6 +1,9 @@
-import type { Handle } from '@sveltejs/kit';
-import Redis from 'ioredis';
 import { captureException } from '@sentry/sveltekit';
+import type { sequence } from '@sveltejs/kit/hooks';
+import Redis from 'ioredis';
+
+type Handle = ReturnType<typeof sequence>;
+
 
 const CACHE_STRATEGY_PRIVATE_ONLY = 'private-only';
 const CACHE_STRATEGY_PRIVATE_AND_PUBLIC = 'private-and-public';
